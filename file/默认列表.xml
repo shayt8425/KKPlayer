@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MusicList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MusicList.xsd">
+  <Music id="1" name="李荣浩 - 有理想" path="C:\Users\37666\Music\李荣浩 - 有理想.flac" totalTime="228000" artist="李荣浩" title="有理想" album="有理想" genre="" trackNumber="3" year="" comment="" />
+</MusicList>
+

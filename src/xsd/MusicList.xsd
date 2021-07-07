@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by Administrator (EMBRACE) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="MusicList">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="Music"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Music">
+		<xs:complexType>
+			<xs:attribute name="id" type="xs:int" use="required"/>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+			<xs:attribute name="path" type="xs:string" use="required"/>
+			<xs:attribute name="artist" type="xs:string" use="optional"/>
+			<xs:attribute name="title" type="xs:string" use="optional"/>
+			<xs:attribute name="album" type="xs:string" use="optional" />			
+			<xs:attribute name="genre" type="xs:string" use="optional"/>
+			<xs:attribute name="year" type="xs:string" use="optional"/>
+			<xs:attribute name="comment" type="xs:string" use="optional" />
+			<xs:attribute name="trackNumber" type="xs:string" use="optional"/>
+			<xs:attribute name="totalTime" type="xs:long" use="required"/>
+			<xs:attribute name="lyricPath" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
